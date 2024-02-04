@@ -1,5 +1,6 @@
 {
     "urls": {
+        "https://info-cursos.github.io": true,
         "https://info-cursos.github.io/": true,
         "https://info-cursos.github.io/index": true,
         "https://info-cursos.github.io/index.html": true,
