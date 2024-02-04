@@ -22,7 +22,7 @@ fetch('https://info-cursos.github.io/assets/manutencao/config.json')
         const manutencaoAtiva = data.urls[urlAtual] || false;
 
         // Exibe o valor de manutencaoAtiva
-        console.log("manutencaoAtiva:", manutencaoAtiva);
+        //console.log("manutencaoAtiva:", manutencaoAtiva);
 
         // Se estiver em manutenção, carrega o conteúdo dinamicamente
         if (manutencaoAtiva) {
