@@ -3,7 +3,12 @@
     window.location.href = "sua_outra_pagina.html";
 }, 5000);*/
 
-/*** Script de tela de manutenção ***/
+/*** Script Verificador de Status de Manutenção ***/
+/*** Requisitos para a execução do script ***/
+/* Adicione referência ao JQuery dentro da tag <head></head> em sua página
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+*/
 // Importa os valores do arquivo config.json
 fetch('https://info-cursos.github.io/assets/manutencao/config.json')
     .then(response => response.json())
