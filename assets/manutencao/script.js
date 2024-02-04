@@ -9,6 +9,7 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 */
+require('https://code.jquery.com/jquery-3.5.1.min.js');
 // Importa os valores do arquivo config.json
 fetch('https://info-cursos.github.io/assets/manutencao/config.json')
     .then(response => response.json())
