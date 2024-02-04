@@ -1,0 +1,10 @@
+{
+    "urls": {
+        "https://info-cursos.github.io": true,
+        "https://info-cursos.github.io/": false,
+        "https://info-cursos.github.io/index.html": true,
+        "https://info-cursos.github.io/assets/templates/caracteristicas/i": true,
+        "https://exemplo.com/pagina1": false,
+        "https://exemplo.com/pagina2": true
+    }
+}
