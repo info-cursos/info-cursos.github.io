@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8" />
@@ -15,59 +15,6 @@
     <link href="css/styles.css" rel="stylesheet" />
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!--<script>
-        // Verifica se a página está em modo de manutenção
-        var manutencaoAtiva = true; // Altere para 'false' quando quiser desativar a manutenção
-
-        // Carrega o conteúdo da página de manutenção dinamicamente
-        if (manutencaoAtiva) {
-            $(document).ready(function () {
-                $(document.body).load("https://info-cursos.github.io/assets/manutencao/index.html", function () {
-                    // Após o carregamento, define o estilo do body como display: block
-                    document.body.style.display = "block";
-                });
-            });
-        } else {
-            $(document).ready(function () {
-                // Se não estiver em manutenção, define o estilo do body como display: block
-                document.body.style.display = "block";
-            });
-        }
-    </script>-->
-    <!--<script>
-        // Importa os valores do arquivo config.json
-        fetch('https://info-cursos.github.io/assets/manutencao/config.json')
-            .then(response => response.json())
-            .then(data => {
-                // Obtém a URL atual
-                const urlAtual = window.location.href;
-                // Define a URL de Manutenção
-                const urlManutencao = "https://info-cursos.github.io/assets/manutencao/index.html";
-
-                // Verifica se a URL está na lista e atribui o valor correspondente a manutencaoAtiva
-                const manutencaoAtiva = data.urls[urlAtual] || false;
-
-                // Exibe o valor de manutencaoAtiva
-                console.log("manutencaoAtiva:", manutencaoAtiva);
-
-                // Se estiver em manutenção, carrega o conteúdo dinamicamente
-                if (manutencaoAtiva) {
-                    $(document).ready(function () {
-                        $(document.body).load(urlManutencao, function () {
-                            // Após o carregamento, define o estilo do body como display: block
-                            document.body.style.display = "block";
-                        });
-                    });
-                } else {
-                    $(document).ready(function () {
-                        // Se não estiver em manutenção, define o estilo do body como display: block
-                        document.body.style.display = "block";
-                    });
-                }
-            })
-            .catch(error => console.error('Erro ao carregar o arquivo config.json:', error));
-
-    </script>-->
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- Verificador de Status de Manutenção -->
@@ -75,7 +22,6 @@
 </head>
 
 <body style="display: none;">
-    <!-- Conteúdo da sua página aqui -->
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container px-lg-5">
