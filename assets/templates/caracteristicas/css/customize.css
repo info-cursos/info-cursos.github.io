@@ -1,0 +1,16 @@
+/*Card principal*/
+.p-4.p-lg-5.bg-light.rounded-3.text-center,
+/*demais cads*/
+.card {
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#divLinkBottom {
+    margin: 50px;
+}
+
+#linkBottom {
+    margin-top: -50px;
+    width: 250px;
+}
