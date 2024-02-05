@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Verificar se o nome do produto está presente
     if (produtoNome) {
         // Carregar o arquivo config.json
-        fetch('config.json')
+        fetch('https://info-cursos.github.io/produtos/config.json')
             .then(response => response.json())
             .then(data => atualizarDescricao(data[produtoNome]))
             .catch(error => console.error('Erro ao carregar config.json:', error));
