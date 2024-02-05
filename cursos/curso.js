@@ -23,6 +23,8 @@ function atualizarDescricao(id) {
     document.getElementById('beneficios').textContent = id.detalhes.beneficios;
     document.getElementById('conteudo').textContent = id.detalhes.conteudo;
     document.getElementById('bonus').textContent = id.detalhes.bonus;
+    document.getElementById('acesso').textContent = id.detalhes.conteudo;
+    document.getElementById('promocao').textContent = id.detalhes.conteudo;
     document.getElementById('certificado').textContent = id.detalhes.certificado;
     document.getElementById('garantia').textContent = id.detalhes.garantia;
 
