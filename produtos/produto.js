@@ -15,12 +15,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-function atualizarDescricao(descricao) {
+function atualizarDescricao(produto) {
     // Atualizar os valores dos elementos <h2>
-    document.getElementById('sobre').textContent = descricao.sobre;
-    document.getElementById('beneficios').textContent = descricao.beneficios;
-    document.getElementById('conteudo').textContent = descricao.conteudo;
-    document.getElementById('bonus').textContent = descricao.bonus;
-    document.getElementById('certificado').textContent = descricao.certificado;
-    document.getElementById('garantia').textContent = descricao.garantia;
+    document.getElementById('sobre').textContent = produto.descricao.sobre;
+    document.getElementById('beneficios').textContent = produto.descricao.beneficios;
+    document.getElementById('conteudo').textContent = produto.descricao.conteudo;
+    document.getElementById('bonus').textContent = produto.descricao.bonus;
+    document.getElementById('certificado').textContent = produto.descricao.certificado;
+    document.getElementById('garantia').textContent = produto.descricao.garantia;
+
+    // Atualizar o valor do atributo href do elemento <a> com o id 'link'
+    document.getElementById('link').href = produto.link;
+
+    // Atualizar o texto do elemento <a> com o id 'link'
+    document.getElementById('link').textContent = `Visite o site do ${produto.nome}`;
 }
