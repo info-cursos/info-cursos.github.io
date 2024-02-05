@@ -1,0 +1,29 @@
+{
+    "sobrenacelhas-perfeitas": {
+        "nome": "Sobrancelhas Perfeitas",
+        "descricao": "Método totalmente comprovado por mais de 60.000 mulheres que  já tiveram sua vida transformada através do Design de Sobrancelhas",
+        "detalhes": {
+            "sobre": "Descrição sobre o Produto 1.",
+            "beneficios": "Benefícios do Produto 1.",
+            "conteudo": "Conteúdo do Produto 1.",
+            "bonus": "O curso oferece 5 BôNUS especiais: Suporte direto com a professora Online, Epilação Egípcia, Descoloração e coloração em rúivas, Correção com lápis dematográfico e Como fazer a ortografia perfeita",
+            "certificado":"Após concluir o Curso Sobrancelhas Perfeitas, você terá acesso a um lindo certificado de conclusão que você poderá emitir direto da sua área do aluno",
+            "garantia": "O curso oferece uma garantia segura de 7 dias após a compra."
+        },
+        "link": "https://go.hotmart.com/C90394697M"
+    },
+    "produto2": {
+        "nome": "Produto 2",
+        "descricao": "Descricao do produto 2",
+        "detalhes": {
+            "sobre": "Descrição sobre o Produto 2.",
+            "beneficios": "Benefícios do Produto 2.",
+            "conteudo": "Conteúdo do Produto 2.",
+            "bonus": "Bônus do Produto 2.",
+            "certificado": "Certificado do Produto 2.",
+            "garantia": "Garantia do Produto 2."
+        },
+        "link": "https://seusite.com/produto2"
+    }
+}
+

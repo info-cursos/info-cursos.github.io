@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Obter o nome do produto da URL
     const urlParams = new URLSearchParams(window.location.search);
-    const produtoNome = urlParams.get('produto');
+    const produtoNome = urlParams.get('id');
 
     // Verificar se o nome do produto está presente
     if (produtoNome) {
         // Carregar o arquivo config.json
-        fetch('https://info-cursos.github.io/produtos/config.json')
+        fetch('https://info-cursos.github.io/cursos/cursos.json')
             .then(response => response.json())
             .then(data => atualizarDescricao(data[produtoNome]))
-            .catch(error => console.error('Erro ao carregar config.json:', error));
+            .catch(error => console.error('Erro ao carregar cursos.json:', error));
     } else {
         console.error('Nome do produto não especificado na URL.');
     }
