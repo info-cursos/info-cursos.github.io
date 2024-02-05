@@ -17,16 +17,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function atualizarDescricao(produto) {
     // Atualizar os valores dos elementos <h2>
-    document.getElementById('sobre').textContent = produto.descricao.sobre;
-    document.getElementById('beneficios').textContent = produto.descricao.beneficios;
-    document.getElementById('conteudo').textContent = produto.descricao.conteudo;
-    document.getElementById('bonus').textContent = produto.descricao.bonus;
-    document.getElementById('certificado').textContent = produto.descricao.certificado;
-    document.getElementById('garantia').textContent = produto.descricao.garantia;
+    document.getElementById('nome').textContent = produto.nome;
+    document.getElementById('descricao').textContent = produto.descricao;
+    document.getElementById('sobre').textContent = produto.detalhes.sobre;
+    document.getElementById('beneficios').textContent = produto.detalhes.beneficios;
+    document.getElementById('conteudo').textContent = produto.detalhes.conteudo;
+    document.getElementById('bonus').textContent = produto.detalhes.bonus;
+    document.getElementById('certificado').textContent = produto.detalhes.certificado;
+    document.getElementById('garantia').textContent = produto.detalhes.garantia;
 
-    // Atualizar o valor do atributo href do elemento <a> com o id 'link'
-    document.getElementById('link').href = produto.link;
-
-    // Atualizar o texto do elemento <a> com o id 'link'
-    document.getElementById('link').textContent = `Visite o site do ${produto.nome}`;
+    // Atualizar o valor do atributo href do elemento <a> com o id 'linkTop'
+    document.getElementById('linkTop').href = produto.link;
+    // Atualizar o texto do elemento <a> com o id 'linkTop'
+    //document.getElementById('linkTop').textContent = `Visite o site do ${produto.nome}`;
+    document.getElementById('linkTop').textContent = 'Inscreva-se Agora';
+    // Atualizar o valor do atributo href do elemento <a> com o id 'linkBottom'
+    document.getElementById('linkBottom').href = produto.link;
+    // Atualizar o texto do elemento <a> com o id 'linkBottom'
+    //document.getElementById('linkBottom').textContent = `Visite o site do ${produto.nome}`;
+    document.getElementById('linkBottom').textContent = 'Inscreva-se Agora';
 }

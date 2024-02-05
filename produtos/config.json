@@ -1,7 +1,8 @@
 {
     "produto1": {
         "nome": "Produto 1",
-        "descricao": {
+        "descricao": "Descricao do produto 1",
+        "detalhes": {
             "sobre": "Descrição sobre o Produto 1.",
             "beneficios": "Benefícios do Produto 1.",
             "conteudo": "Conteúdo do Produto 1.",
@@ -13,7 +14,8 @@
     },
     "produto2": {
         "nome": "Produto 2",
-        "descricao": {
+        "descricao": "Descricao do produto 2",
+        "detalhes": {
             "sobre": "Descrição sobre o Produto 2.",
             "beneficios": "Benefícios do Produto 2.",
             "conteudo": "Conteúdo do Produto 2.",
