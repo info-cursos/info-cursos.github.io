@@ -1,0 +1,18 @@
+{
+    "produto1": {
+        "sobre": "Descrição sobre o Produto 1.",
+        "beneficios": "Benefícios do Produto 1.",
+        "conteudo": "Conteúdo do Produto 1.",
+        "bonus": "Bônus do Produto 1.",
+        "certificado": "Certificado do Produto 1.",
+        "garantia": "Garantia do Produto 1."
+    },
+    "produto2": {
+        "sobre": "Descrição sobre o Produto 2.",
+        "beneficios": "Benefícios do Produto 2.",
+        "conteudo": "Conteúdo do Produto 2.",
+        "bonus": "Bônus do Produto 2.",
+        "certificado": "Certificado do Produto 2.",
+        "garantia": "Garantia do Produto 2."
+    }
+}
