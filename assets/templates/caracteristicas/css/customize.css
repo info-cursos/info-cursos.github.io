@@ -12,3 +12,7 @@
     width: 250px;
 }
 
+/* Theme Color */
+.bg-dark {
+    baclground-color: #0d6efd !important;
+}
