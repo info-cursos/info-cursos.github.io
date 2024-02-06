@@ -18,15 +18,15 @@
         "links": {
             "linkTop": {
                 "href": "https://go.hotmart.com/C90394697M",
-                "textContext": "Inscreva-se Agora"
+                "textContent": "Inscreva-se Agora"
             },
             "linkMeio": {
                 "href": "https://go.hotmart.com/C90394697M",
-                "textContext": "Sim, quero me inscrever"
+                "textContent": "Sim, quero me inscrever!"
             },
             "linkBottom": {
                 "href": "https://go.hotmart.com/C90394697M",
-                "textContext": "Quero me inscrever"
+                "textContent": "Quero me inscrever"
             }
         }
     },
