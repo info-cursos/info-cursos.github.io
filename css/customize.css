@@ -3,6 +3,10 @@
     box-shadow: 5px 5px 1px rgba(13, 110, 253, 0.1);
 }
 
+#linkMeio {
+    width: -webkit-fill-available;
+}
+
 #divLinkBottom {
     margin: 50px;
 }

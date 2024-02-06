@@ -32,16 +32,16 @@ function atualizarDescricao(id) {
     document.getElementById('garantia').textContent = id.detalhes.garantia;
 
     // Atualizar o valor do atributo href do elemento <a> com o id 'linkTop'
-    document.getElementById('linkTop').href = id.link;
+    document.getElementById('linkTop').href = id.links.linkTop.href;
     // Atualizar o texto do elemento <a> com o id 'linkTop'
     //document.getElementById('linkTop').textContent = `Visite o site do ${produto.nome}`;
-    document.getElementById('linkTop').textContent = 'Inscreva-se Agora';
+    document.getElementById('linkTop').textContent = id.links.linkTop.textContent;
     // Atualizar o valor do atributo href do elemento <a> com o id 'linkMeio'
-    document.getElementById('linkMeio').href = id.link;
+    document.getElementById('linkMeio').href = id.links.linkMeio.href;
     // Atualizar o texto do elemento <a> com o id 'linkMeio'
-    document.getElementById('linkMeio').textContent = 'Sim,quero me inscrever';
+    document.getElementById('linkMeio').textContent =  id.links.linkMeio.textContent;
     // Atualizar o valor do atributo href do elemento <a> com o id 'linkBottom'
-    document.getElementById('linkBottom').href = id.link;
+    document.getElementById('linkBottom').href = id.links.linkBottom.href;
     // Atualizar o texto do elemento <a> com o id 'linkBottom'
-    document.getElementById('linkBottom').textContent = 'Quero me inscrever';
+    document.getElementById('linkBottom').textContent = id.links.linkBottom.textContent;
 }

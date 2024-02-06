@@ -15,7 +15,20 @@
             "certificado": "Após concluir o Curso Sobrancelhas Perfeitas, você terá acesso a um lindo certificado de conclusão que você poderá emitir direto da sua área do aluno.",
             "garantia": "O curso oferece uma garantia segura de 7 dias após a compra."
         },
-        "link": "https://go.hotmart.com/C90394697M"
+        "links": {
+            "linkTop": {
+                "href": "https://go.hotmart.com/C90394697M",
+                "textContext": "Inscreva-se Agora"
+            },
+            "linkMeio": {
+                "href": "https://go.hotmart.com/C90394697M",
+                "textContext": "Sim, quero me inscrever"
+            },
+            "linkBottom": {
+                "href": "https://go.hotmart.com/C90394697M",
+                "textContext": "Quero me inscrever"
+            }
+        }
     },
     "produto2": {
         "nome": "Produto 2",
