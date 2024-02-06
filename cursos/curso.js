@@ -19,8 +19,8 @@ function atualizarDescricao(id) {
     // Atualizar os valores dos elementos de textos e imagem
     document.getElementById('nome').textContent = id.nome;
     document.getElementById('descricao').textContent = id.descricao;
-    document.getElementById('srcImagem').src = id.srcImagem;
-    document.getElementById('altImagem').alt = id.altImagem;
+    document.getElementById('imagem').src = id.srcImagem;
+    document.getElementById('imagem').alt = id.altImagem;
     document.getElementById('fraseConvite').textContent = id.fraseConvite;
     document.getElementById('sobre').textContent = id.detalhes.sobre;
     document.getElementById('beneficios').textContent = id.detalhes.beneficios;
