@@ -16,9 +16,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function atualizarDescricao(id) {
-    // Atualizar os valores dos elementos <h2>
+    // Atualizar os valores dos elementos de textos e imagem
     document.getElementById('nome').textContent = id.nome;
     document.getElementById('descricao').textContent = id.descricao;
+    document.getElementById('srcImagem').src = id.srcImagem;
+    document.getElementById('altImagem').alt = id.altImagem;
+    document.getElementById('fraseConvite').textContent = id.fraseConvite;
     document.getElementById('sobre').textContent = id.detalhes.sobre;
     document.getElementById('beneficios').textContent = id.detalhes.beneficios;
     document.getElementById('conteudo').textContent = id.detalhes.conteudo;
@@ -33,9 +36,12 @@ function atualizarDescricao(id) {
     // Atualizar o texto do elemento <a> com o id 'linkTop'
     //document.getElementById('linkTop').textContent = `Visite o site do ${produto.nome}`;
     document.getElementById('linkTop').textContent = 'Inscreva-se Agora';
+    // Atualizar o valor do atributo href do elemento <a> com o id 'linkMeio'
+    document.getElementById('linkMeio').href = id.link;
+    // Atualizar o texto do elemento <a> com o id 'linkMeio'
+    document.getElementById('linkMeio').textContent = 'Sim,quero me inscrever';
     // Atualizar o valor do atributo href do elemento <a> com o id 'linkBottom'
     document.getElementById('linkBottom').href = id.link;
     // Atualizar o texto do elemento <a> com o id 'linkBottom'
-    //document.getElementById('linkBottom').textContent = `Visite o site do ${produto.nome}`;
-    document.getElementById('linkBottom').textContent = 'Inscreva-se Agora';
+    document.getElementById('linkBottom').textContent = 'Quero me inscrever';
 }
