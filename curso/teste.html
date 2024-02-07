@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cursos</title>
+</head>
+<body>
+    <div id="formulario"></div>
+
+    <script>
+        // Carregar o JSON e criar o formulário
+        document.addEventListener("DOMContentLoaded", function () {
+            // URL do arquivo JSON
+            const jsonUrl = 'https://info-cursos.github.io/curso/teste.json';
+
+            // Carregar o JSON usando fetch
+            fetch(jsonUrl)
+                .then(response => response.json())
+                .then(data => {
+                    // Extrair os dados do JSON
+                    const autor = data.autor;
+                    const cursos = autor.JessicaSoares.cursos;
+
+                    // Criar o formulário
+                    const formulario = document.getElementById('formulario');
+                    const form = document.createElement('form');
+
+                    // Iterar sobre os cursos e adicionar campos ao formulário
+                    for (const cursoKey in cursos) {
+                        const curso = cursos[cursoKey];
+                        const info = curso.info;
+
+                        // Criar um campo de texto para cada informação do curso
+                        for (const infoKey in info) {
+                            const label = document.createElement('label');
+                            label.textContent = `${infoKey}:`;
+                            const input = document.createElement('input');
+                            input.setAttribute('type', 'text');
+                            input.setAttribute('value', info[infoKey]);
+                            input.setAttribute('readonly', 'true'); // Tornar os campos somente leitura
+                            form.appendChild(label);
+                            form.appendChild(input);
+                            form.appendChild(document.createElement('br'));
+                        }
+                    }
+
+                    // Adicionar o formulário ao HTML
+                    formulario.appendChild(form);
+                })
+                .catch(error => console.error('Erro ao carregar JSON:', error));
+        });
+    </script>
+</body>
+</html>
