@@ -50,4 +50,7 @@ function atualizarDados(id) {
     document.getElementById('linkTop2').textContent = id.links.linksTop.linkTop2.textContent;
     document.getElementById('linkMeio').textContent =  id.links.linkMeio.textContent;
     document.getElementById('linkBottom').textContent = id.links.linkBottom.textContent;
+
+    
 }
+setInterval(atualizarDados, 5000);
