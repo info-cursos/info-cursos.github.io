@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Obter o nome do produto da URL
     const urlParams = new URLSearchParams(window.location.search);
     const produtoID = urlParams.get('id');
+    const curso = "cursos";
 
     // Verificar se o nome do produto está presente
     if (produtoID) {
@@ -20,7 +21,7 @@ function atualizarDados(id) {
     document.getElementById('produtoTitle').textContent = `Info Cursos | ${id.nome}`;
 
     // Atualizar os valores dos elementos de textos e imagem
-    document.getElementById('nome').textContent = cursos.id.nome;
+    document.getElementById('nome').textContent = curso.id.nome;
     document.getElementById('descricao').textContent = id.descricao;
     document.getElementById('fraseConvite').textContent = id.fraseConvite;
     document.getElementById('sobre').textContent = id.detalhes.sobre;
