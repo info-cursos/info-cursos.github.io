@@ -9,19 +9,19 @@ document.addEventListener("DOMContentLoaded", function () {
         // Carregar o arquivo config.json
         fetch('https://info-cursos.github.io/curso/cursos.edit.json')
             .then(response => response.json())
-            .then(data => atualizarDados(data[[curso].[produtoID]]))
+            .then(data => atualizarDados(data[curso]))
             .catch(error => console.error('Erro ao carregar cursos.json:', error));
     } else {
         console.error('ID do produto não especificado na URL.');
     }
 });
 
-function atualizarDados(id) {
+function atualizarDados(curso) {
     //Atualizar Título da página para o nome do produto
     document.getElementById('produtoTitle').textContent = `Info Cursos | ${id.nome}`;
 
     // Atualizar os valores dos elementos de textos e imagem
-    document.getElementById('nome').textContent = id.nome;
+    document.getElementById('nome').textContent = curso[produtoID].nome;
     document.getElementById('descricao').textContent = id.descricao;
     document.getElementById('fraseConvite').textContent = id.fraseConvite;
     document.getElementById('sobre').textContent = id.detalhes.sobre;
