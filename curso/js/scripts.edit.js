@@ -2,26 +2,26 @@ document.addEventListener("DOMContentLoaded", function () {
     // Obter o nome do produto da URL
     const urlParams = new URLSearchParams(window.location.search);
     const produtoID = urlParams.get('id');
-    const curso = ['cursos'];
+    //const curso = ['cursos'];
 
     // Verificar se o nome do produto está presente
     if (produtoID) {
         // Carregar o arquivo config.json
         fetch('https://info-cursos.github.io/curso/cursos.edit.json')
             .then(response => response.json())
-            .then(data => atualizarDados(data[curso]))
+            .then(data => atualizarDados(data[produtoID]))
             .catch(error => console.error('Erro ao carregar cursos.json:', error));
     } else {
         console.error('ID do produto não especificado na URL.');
     }
 });
 
-function atualizarDados(curso) {
+function atualizarDados(id) {
     //Atualizar Título da página para o nome do produto
     document.getElementById('produtoTitle').textContent = `Info Cursos | ${id.nome}`;
 
     // Atualizar os valores dos elementos de textos e imagem
-    document.getElementById('nome').textContent = curso[produtoID].nome;
+    document.getElementById('nome').textContent = id.nome;
     document.getElementById('descricao').textContent = id.descricao;
     document.getElementById('fraseConvite').textContent = id.fraseConvite;
     document.getElementById('sobre').textContent = id.detalhes.sobre;
