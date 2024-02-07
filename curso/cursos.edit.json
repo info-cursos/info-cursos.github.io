@@ -1,47 +1,49 @@
 {
     "cursos": {
-        "sobrancelhas-perfeitas": {
-            "info": {
-                "autor": "Jéssica Soares",
-                "site": "https://sobrancelhass.com.br",
-                "plataforma": "Hotmart"
-            },
-            "nome": "Sobrancelhas Perfeitas",
-            "descricao": "Método totalmente comprovado por mais de 60.000 mulheres que  já tiveram sua vida transformada através do Design de Sobrancelhas",
-            "srcImagem": "assets/sobrancelhas-perfeitas.jpg",
-            "altImagem": "Curso Sobrancelhas Perfeitas",
-            "fraseConvite": "Você quer mudar de vida e se tornar uma especialista em design de sobrancelhas, e com isso ter sua agenda lotada?",
-            "detalhes": {
-                "sobre": "O Sobrancelhas Perfeitas é um Curso Profissional de Designer de sobrancelhas. O curso  foi desenvolvido e criado por Jéssica Soares, Especialista em Designer de Sobrancelhas, com mais de 10 anos de experiência e atuação no segmento.",
-                "beneficios": "Você irá aprender as técnicas mais Inovadoras e Eficazes para o Design de Sobrancelhas, descobrir como aplicá-las de maneira Simples e Prática em seu trabalho. Você estará pronta para atuar no mercado que mais tem crescido no Brasil e no mundo.",
-                "conteudo": "O curso abrange Treino de design, Epilação Egípcia, Cuidado pós Henna e Tintura, Marcação a mão Livre, Design Feminino com Linha e Pença, Henna Ombré, Conduta Profissional e muito mais.",
-                "bonus": "O curso oferece 5 BÔNUS especiais: Suporte direto com a professora Online, Epilação Egípcia, Descoloração e coloração em rúivas, Correção com lápis dematográfico e Como fazer a ortografia perfeita",
-                "acesso": "As aulas ficam disponíveis através de uma plataforma de cursos e você terá acesso a diversas vídeo aulas (passo a passo) + Bônus Especiais.",
-                "promocao": "O curso está com um desconto especial para novos alunos. Aproveite agora, são R$ 300 de desconto especialmente pra você, essa é sua chance de se tornar uma Profissional em Designer de Sobrancelhas.",
-                "certificado": "Após concluir o Curso Sobrancelhas Perfeitas, você terá acesso a um lindo certificado de conclusão que você poderá emitir direto da sua área do aluno.",
-                "garantia": "O curso oferece uma garantia segura de 7 dias após a compra."
-            },
-            "links": {
-                "linksTop": {
-                    "linkTop1": {
-                        "href": "https://go.hotmart.com/C90394697M",
-                        "textContent": "Visite o site Oficial"
+        "autor": {
+            "sobrancelhas-perfeitas": {
+                "info": {
+                    "autor": "Jéssica Soares",
+                    "site": "https://sobrancelhass.com.br",
+                    "plataforma": "Hotmart"
+                },
+                "nome": "Sobrancelhas Perfeitas",
+                "descricao": "Método totalmente comprovado por mais de 60.000 mulheres que  já tiveram sua vida transformada através do Design de Sobrancelhas",
+                "srcImagem": "assets/sobrancelhas-perfeitas.jpg",
+                "altImagem": "Curso Sobrancelhas Perfeitas",
+                "fraseConvite": "Você quer mudar de vida e se tornar uma especialista em design de sobrancelhas, e com isso ter sua agenda lotada?",
+                "detalhes": {
+                    "sobre": "O Sobrancelhas Perfeitas é um Curso Profissional de Designer de sobrancelhas. O curso  foi desenvolvido e criado por Jéssica Soares, Especialista em Designer de Sobrancelhas, com mais de 10 anos de experiência e atuação no segmento.",
+                    "beneficios": "Você irá aprender as técnicas mais Inovadoras e Eficazes para o Design de Sobrancelhas, descobrir como aplicá-las de maneira Simples e Prática em seu trabalho. Você estará pronta para atuar no mercado que mais tem crescido no Brasil e no mundo.",
+                    "conteudo": "O curso abrange Treino de design, Epilação Egípcia, Cuidado pós Henna e Tintura, Marcação a mão Livre, Design Feminino com Linha e Pença, Henna Ombré, Conduta Profissional e muito mais.",
+                    "bonus": "O curso oferece 5 BÔNUS especiais: Suporte direto com a professora Online, Epilação Egípcia, Descoloração e coloração em rúivas, Correção com lápis dematográfico e Como fazer a ortografia perfeita",
+                    "acesso": "As aulas ficam disponíveis através de uma plataforma de cursos e você terá acesso a diversas vídeo aulas (passo a passo) + Bônus Especiais.",
+                    "promocao": "O curso está com um desconto especial para novos alunos. Aproveite agora, são R$ 300 de desconto especialmente pra você, essa é sua chance de se tornar uma Profissional em Designer de Sobrancelhas.",
+                    "certificado": "Após concluir o Curso Sobrancelhas Perfeitas, você terá acesso a um lindo certificado de conclusão que você poderá emitir direto da sua área do aluno.",
+                    "garantia": "O curso oferece uma garantia segura de 7 dias após a compra."
+                },
+                "links": {
+                    "linksTop": {
+                        "linkTop1": {
+                            "href": "https://go.hotmart.com/C90394697M",
+                            "textContent": "Visite o site Oficial"
+                        },
+                        "linkTop2": {
+                            "href": "https://go.hotmart.com/C90394697M",
+                            "textContent": "Inscreva-se Agora"
+                        }
                     },
-                    "linkTop2": {
+                    "linkImagem": {
+                        "href": "https://go.hotmart.com/C90394697M"
+                    },
+                    "linkMeio": {
                         "href": "https://go.hotmart.com/C90394697M",
-                        "textContent": "Inscreva-se Agora"
+                        "textContent": "Sim, quero me inscrever!"
+                    },
+                    "linkBottom": {
+                        "href": "https://go.hotmart.com/C90394697M",
+                        "textContent": "Quero me inscrever"
                     }
-                },
-                "linkImagem": {
-                    "href": "https://go.hotmart.com/C90394697M"
-                },
-                "linkMeio": {
-                    "href": "https://go.hotmart.com/C90394697M",
-                    "textContent": "Sim, quero me inscrever!"
-                },
-                "linkBottom": {
-                    "href": "https://go.hotmart.com/C90394697M",
-                    "textContent": "Quero me inscrever"
                 }
             }
         }
