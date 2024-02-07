@@ -3,6 +3,12 @@
     box-shadow: 5px 5px 1px rgba(13, 110, 253, 0.1);
 }
 
+/* Paragrafos dos detalhes*/
+.mb-0 {
+    margin-bottom: 0 !important;
+    font-size: larger;
+}
+
 #linksTop a {
     margin: 5px;
 }
