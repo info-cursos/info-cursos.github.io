@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Obter o nome do produto da URL
     const urlParams = new URLSearchParams(window.location.search);
     const produtoID = urlParams.get('id');
-    const curso = "cursos";
+    const curso = ['cursos'];
 
     // Verificar se o nome do produto está presente
     if (produtoID) {
