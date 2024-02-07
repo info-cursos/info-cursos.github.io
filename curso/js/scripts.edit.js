@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const curso = "cursos";
 
     // Verificar se o nome do produto está presente
-    if (curso) {
+    if (produtoID) {
         // Carregar o arquivo config.json
         fetch('https://info-cursos.github.io/curso/cursos.edit.json')
             .then(response => response.json())
-            .then(data => atualizarDados(data[curso]))
+            .then(data => atualizarDados(data[produtoID]))
             .catch(error => console.error('Erro ao carregar cursos.json:', error));
     } else {
         console.error('ID do produto não especificado na URL.');
