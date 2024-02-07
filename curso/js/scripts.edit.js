@@ -2,52 +2,18 @@ document.addEventListener("DOMContentLoaded", function () {
     // Obter o nome do produto da URL
     const urlParams = new URLSearchParams(window.location.search);
     const produtoID = urlParams.get('id');
-    //const curso = ['cursos'];
+    const curso = "cursos";
 
- /*   // Verificar se o nome do produto está presente
-    if (produtoID) {
+    // Verificar se o nome do produto está presente
+    if (curso) {
         // Carregar o arquivo config.json
         fetch('https://info-cursos.github.io/curso/cursos.edit.json')
             .then(response => response.json())
-            .then(data => atualizarDados(data[produtoID]))
+            .then(data => atualizarDados(data[curso]))
             .catch(error => console.error('Erro ao carregar cursos.json:', error));
     } else {
         console.error('ID do produto não especificado na URL.');
-    }*/
-    if (produtoID) {
-        // Carregar o arquivo config.json
-        fetch('https://info-cursos.github.io/curso/cursos.edit.json')
-            .then(response => response.json())
-            .then(data => {
-                const produto = encontrarProdutoPorID(data, produtoID);
-                if (produto) {
-                    atualizarDados(produto);
-                } else {
-                    console.error('Produto não encontrado.');
-                }
-            })
-            .catch(error => console.error('Erro ao carregar cursos.json:', error));
-    } else {
-        console.error('ID do produto não especificado na URL.');
-    }
-    
-    // Função para encontrar o produto por ID em todos os subníveis do objeto JSON
-    function encontrarProdutoPorID(objeto, id) {
-        for (const chave in objeto) {
-            if (objeto.hasOwnProperty(chave)) {
-                if (chave === 'produtoID' && objeto[chave] === id) {
-                    return objeto;
-                } else if (typeof objeto[chave] === 'object') {
-                    const resultado = encontrarProdutoPorID(objeto[chave], id);
-                    if (resultado) {
-                        return resultado;
-                    }
-                }
-            }
-        }
-        return null;
-    }
-    
+    }   
 });
 
 function atualizarDados(id) {
