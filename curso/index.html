@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Info Cursos | Sobrancelhas Perfeitas</title>
+    <title id="produtoTitle"></title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap icons-->
@@ -62,20 +62,23 @@
     <header class="py-5">
         <div class="container px-lg-5">
             <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
-                <div class="m-4 m-lg-5">
-                    <h1 id="nome" class="display-5 fw-bold">Aqui vai o Título do Curso</h1>
-                    <p id="descricao" class="fs-4">Aqui vai a descrição do curso</p>
-                    <a id="linkTop" class="btn btn-primary btn-lg" href="#!">Aqui vai um link</a>
+                <div id="linksTop" class="m-4 m-lg-5">
+                    <h1 id="nome" class="display-5 fw-bold"></h1>
+                    <p id="descricao" class="fs-4"></p>
+                    <a id="linkTop1" class="btn btn-primary btn-lg" href=""></a>
+                    <a id="linkTop2" class="btn btn-primary btn-lg" href=""></a>
                 </div>
             </div>
         </div>
         <div class="container px-lg-5">
             <div class="row gx-4 gx-lg-5 align-items-center my-5">
-                <div class="col-lg-7"><img id="imagem" class="img-fluid rounded mb-4 mb-lg-0" alt="..."></div>
+                <div class="col-lg-7"><a id="linkImagem" href="">
+                    <img id="imagem" class="img-fluid rounded mb-4 mb-lg-0" alt="..."></a>
+                </div>
                 <div class="col-lg-5">
-                    <h3 id="fraseConvite" class="font-weight-light">Aqui vai uma frase convidando a fazer o curso</h3>
+                    <h3 id="fraseConvite" class="font-weight-light"></h3>
                     <p></p>
-                    <a id="linkMeio" class="btn btn-primary" href="#!">Sim, quero me inscrever!</a>
+                    <a id="linkMeio" class="btn btn-primary btn-lg" href=""></a>
                 </div>
             </div>
         </div>
@@ -91,7 +94,7 @@
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
                                     class="bi bi-info-circle"></i></div> <!--Icone anterior - bi bi-collection -->
                             <h2 class="fs-4 fw-bold">Sobre</h2>
-                            <p id="sobre" class="mb-0">Aqui vai o texto sobre o curso</p>
+                            <p id="sobre" class="mb-0"></p>
                         </div>
                     </div>
                 </div>
@@ -101,7 +104,7 @@
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
                                     class="bi bi-hand-thumbs-up"></i></div><!--Icone anterior - bi bi-cloud-download -->
                             <h2 class="fs-4 fw-bold">Benefícios</h2>
-                            <p id="beneficios" class="mb-0">Aqui vai os benefícios do curso</p>
+                            <p id="beneficios" class="mb-0"></p>
                         </div>
                     </div>
                 </div>
@@ -111,8 +114,7 @@
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
                                     class="bi bi-file-text"></i></div><!--Icone anterior - bi bi-card-heading -->
                             <h2 class="fs-4 fw-bold">Conteúdo</h2>
-                            <p id="conteudo" class="mb-0">Aqui vai os conteúdo do curso
-                            </p>
+                            <p id="conteudo" class="mb-0"></p>
                         </div>
                     </div>
                 </div>
@@ -122,8 +124,7 @@
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
                                     class="bi bi-gift"></i></div><!--Icone anterior - bi bi-bootstrap -->
                             <h2 class="fs-4 fw-bold">Bônus</h2>
-                            <p id="bonus" class="mb-0">Aqui vai os bônus do curso
-                            </p>
+                            <p id="bonus" class="mb-0"></p>
                         </div>
                     </div>
                 </div>
@@ -133,8 +134,7 @@
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
                                     class="bi bi-person-fill"></i></div><!--Icone anterior - bi bi-card-heading -->
                             <h2 class="fs-4 fw-bold">Acesso</h2>
-                            <p id="acesso" class="mb-0">Aqui vai os acesso do curso
-                            </p>
+                            <p id="acesso" class="mb-0"></p>
                         </div>
                     </div>
                 </div>
@@ -144,7 +144,7 @@
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
                                     class="bi bi-tag-fill"></i></div><!--Icone anterior - bi bi-code -->
                             <h2 class="fs-4 fw-bold">Promoção</h2>
-                            <p id="promocao" class="mb-0">Aqui vai as promoçoes do curso</p>
+                            <p id="promocao" class="mb-0"></p>
                         </div>
                     </div>
                 </div>
@@ -154,7 +154,7 @@
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
                                     class="bi bi-award"></i></div><!--Icone anterior - bi bi-code -->
                             <h2 class="fs-4 fw-bold">Certificado</h2>
-                            <p id="certificado" class="mb-0">Aqui vai o certificado do curso</p>
+                            <p id="certificado" class="mb-0"></p>
                         </div>
                     </div>
                 </div>
@@ -164,14 +164,13 @@
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
                                     class="bi bi-shield-check"></i></div><!--Icone anterior -  bi bi-patch-check -->
                             <h2 class="fs-4 fw-bold">Garantia</h2>
-                            <p id="garantia" class="mb-0">Aqui vai a garantia do curso
-                            </p>
+                            <p id="garantia" class="mb-0"></p>
                         </div>
                     </div>
                 </div>
                 <center>
                     <div id="divLinkBottom">
-                        <a id="linkBottom" class="btn btn-primary btn-lg" href="#!">Inscreva-se Agora</a>
+                        <a id="linkBottom" class="btn btn-primary btn-lg" href=""></a>
                     </div>
                 </center>
             </div>

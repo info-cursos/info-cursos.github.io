@@ -3,8 +3,19 @@
     box-shadow: 5px 5px 1px rgba(13, 110, 253, 0.1);
 }
 
+#linksTop a {
+    margin: 5px;
+}
+
+#linkTop1 {
+    background: white;
+    color: var(--bs-btn-bg);
+    border: 1px solid var(--bs-btn-bg);
+}
+
 #linkMeio {
     width: -webkit-fill-available;
+    padding: 10px;
 }
 
 #divLinkBottom {

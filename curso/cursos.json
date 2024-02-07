@@ -16,9 +16,18 @@
             "garantia": "O curso oferece uma garantia segura de 7 dias após a compra."
         },
         "links": {
-            "linkTop": {
-                "href": "https://go.hotmart.com/C90394697M",
-                "textContent": "Inscreva-se Agora"
+            "linksTop": {
+                "linkTop1": {
+                    "href": "https://go.hotmart.com/C90394697M",
+                    "textContent": "Visite o site Oficial"
+                },
+                "linkTop2": {
+                    "href": "https://go.hotmart.com/C90394697M",
+                    "textContent": "Inscreva-se Agora"
+                }
+            },
+            "linkImagem": {
+                "href": "https://go.hotmart.com/C90394697M"
             },
             "linkMeio": {
                 "href": "https://go.hotmart.com/C90394697M",

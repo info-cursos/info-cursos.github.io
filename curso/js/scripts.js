@@ -1,26 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Obter o nome do produto da URL
     const urlParams = new URLSearchParams(window.location.search);
-    const produtoNome = urlParams.get('id');
+    const produtoID = urlParams.get('id');
 
     // Verificar se o nome do produto está presente
-    if (produtoNome) {
+    if (produtoID) {
         // Carregar o arquivo config.json
         fetch('https://info-cursos.github.io/curso/cursos.json')
             .then(response => response.json())
-            .then(data => atualizarDescricao(data[produtoNome]))
+            .then(data => atualizarDados(data[produtoID]))
             .catch(error => console.error('Erro ao carregar cursos.json:', error));
     } else {
-        console.error('Nome do produto não especificado na URL.');
+        console.error('ID do produto não especificado na URL.');
     }
 });
 
-function atualizarDescricao(id) {
+function atualizarDados(id) {
+    //Atualizar Título da página para o nome do produto
+    document.getElementById('produtoTitle').textContent = `Info Cursos | ${id.nome}`;
+
     // Atualizar os valores dos elementos de textos e imagem
     document.getElementById('nome').textContent = id.nome;
     document.getElementById('descricao').textContent = id.descricao;
-    document.getElementById('imagem').src = id.srcImagem;
-    document.getElementById('imagem').alt = id.altImagem;
     document.getElementById('fraseConvite').textContent = id.fraseConvite;
     document.getElementById('sobre').textContent = id.detalhes.sobre;
     document.getElementById('beneficios').textContent = id.detalhes.beneficios;
@@ -30,18 +31,22 @@ function atualizarDescricao(id) {
     document.getElementById('promocao').textContent = id.detalhes.promocao;
     document.getElementById('certificado').textContent = id.detalhes.certificado;
     document.getElementById('garantia').textContent = id.detalhes.garantia;
+    
+    // Atualizar os valores dos elementos de imagem
+    document.getElementById('imagem').src = id.srcImagem;
+    document.getElementById('imagem').alt = id.altImagem;
 
-    // Atualizar o valor do atributo href do elemento <a> com o id 'linkTop'
-    document.getElementById('linkTop').href = id.links.linkTop.href;
-    // Atualizar o texto do elemento <a> com o id 'linkTop'
-    //document.getElementById('linkTop').textContent = `Visite o site do ${produto.nome}`;
-    document.getElementById('linkTop').textContent = id.links.linkTop.textContent;
-    // Atualizar o valor do atributo href do elemento <a> com o id 'linkMeio'
+    // Atualizar o valor do atributo href dos elementos <a>
+    document.getElementById('linkTop1').href = id.links.linksTop.linkTop1.href;
+    document.getElementById('linkTop2').href = id.links.linksTop.linkTop2.href;
+    document.getElementById('linkImagem').href = id.links.linkImagem.href;
     document.getElementById('linkMeio').href = id.links.linkMeio.href;
-    // Atualizar o texto do elemento <a> com o id 'linkMeio'
-    document.getElementById('linkMeio').textContent =  id.links.linkMeio.textContent;
-    // Atualizar o valor do atributo href do elemento <a> com o id 'linkBottom'
     document.getElementById('linkBottom').href = id.links.linkBottom.href;
-    // Atualizar o texto do elemento <a> com o id 'linkBottom'
+    
+    // Atualizar o valor do atributo textContent dos elementos <a>
+    //document.getElementById('linkTop').textContent = `Visite o site do ${produto.nome}`;
+    document.getElementById('linkTop1').textContent = id.links.linksTop.linkTop1.textContent;
+    document.getElementById('linkTop2').textContent = id.links.linksTop.linkTop2.textContent;
+    document.getElementById('linkMeio').textContent =  id.links.linkMeio.textContent;
     document.getElementById('linkBottom').textContent = id.links.linkBottom.textContent;
 }
