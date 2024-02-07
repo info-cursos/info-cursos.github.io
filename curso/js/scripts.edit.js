@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Carregar o arquivo config.json
         fetch('https://info-cursos.github.io/curso/cursos.edit.json')
             .then(response => response.json())
-            .then(data => atualizarDados(data[produtoID]))
+            .then(data => atualizarDados(data[`Cursos`.produtoID]))
             .catch(error => console.error('Erro ao carregar cursos.json:', error));
     } else {
         console.error('ID do produto não especificado na URL.');
