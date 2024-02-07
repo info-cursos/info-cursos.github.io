@@ -38,18 +38,5 @@
                 "textContent": "Quero me inscrever"
             }
         }
-    },
-    "produto2": {
-        "nome": "Produto 2",
-        "descricao": "Descricao do produto 2",
-        "detalhes": {
-            "sobre": "Descrição sobre o Produto 2.",
-            "beneficios": "Benefícios do Produto 2.",
-            "conteudo": "Conteúdo do Produto 2.",
-            "bonus": "Bônus do Produto 2.",
-            "certificado": "Certificado do Produto 2.",
-            "garantia": "Garantia do Produto 2."
-        },
-        "link": "https://seusite.com/produto2"
     }
 }
