@@ -1,0 +1,75 @@
+{
+    "lanchonete": {
+      "cardapio": {
+        "sanduiches": {
+          "sanduiche1": {
+            "nome": "X-Burger",
+            "ingredientes": ["hamburguer", "queijo", "alface", "tomate", "molho especial"],
+            "preco": 12.99
+          },
+          "sanduiche2": {
+            "nome": "X-Salada",
+            "ingredientes": ["hamburguer", "queijo", "alface", "tomate"],
+            "preco": 10.99
+          },
+          "sanduiche3": {
+            "nome": "X-Egg",
+            "ingredientes": ["hamburguer", "queijo", "alface", "tomate", "ovo"],
+            "preco": 11.99
+          }
+        },
+        "bebidas": {
+          "refrigerantes": {
+            "coca-cola": {
+              "tipo": "Coca-Cola",
+              "tamanho": "500ml",
+              "preco": 4.5
+            },
+            "guarana": {
+              "tipo": "Guaraná Antarctica",
+              "tamanho": "500ml",
+              "preco": 4.0
+            },
+            "sprite": {
+              "tipo": "Sprite",
+              "tamanho": "350ml",
+              "preco": 3.0
+            }
+          },
+          "suco_natural": {
+            "laranja": {
+              "tipo": "Suco de Laranja",
+              "tamanho": "300ml",
+              "preco": 5.0
+            },
+            "limao": {
+              "tipo": "Suco de Limão",
+              "tamanho": "300ml",
+              "preco": 5.0
+            },
+            "abacaxi": {
+              "tipo": "Suco de Abacaxi",
+              "tamanho": "300ml",
+              "preco": 5.0
+            }
+          }
+        }
+      },
+      "promocoes": {
+        "lanche_do_dia": {
+          "descricao": "X-Burger + refrigerante por apenas R$ 15,99!",
+          "validade": "2024-02-10"
+        },
+        "combo_familia": {
+          "descricao": "2 X-Saladas + 2 refrigerantes + batata frita por R$ 35,99!",
+          "validade": "2024-02-15"
+        }
+      },
+      "informacoes": {
+        "endereco": "Rua da Lanchonete, 123",
+        "telefone": "(XX) XXXX-XXXX",
+        "horario_funcionamento": "Seg-Sex: 10:00 - 22:00, Sáb-Dom: 11:00 - 23:00"
+      }
+    }
+  }
+  
