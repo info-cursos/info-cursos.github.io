@@ -11,6 +11,7 @@
 
 #linksTop a {
     margin: 5px;
+    box-shadow: 5px 5px 1px rgba(13, 110, 253, 0.1);
 }
 
 #linkTop1 {
@@ -21,7 +22,7 @@
 
 #linkMeio {
     width: -webkit-fill-available;
-    padding: 10px;
+    box-shadow: 5px 5px 1px #6c757d36;
 }
 
 #divLinkBottom {
@@ -31,9 +32,18 @@
 #linkBottom {
     margin-top: -50px;
     width: 250px;
+    box-shadow: 5px 5px 1px #6c757d36;
 }
 
 /* Theme Color */
 .bg-dark {
     background-color: #0d6efd !important;
+}
+
+#imagem {
+    box-shadow: 5px 5px 1px #6c757d36;
+}
+
+.feature {
+    box-shadow: 5px 5px 1px rgba(13, 110, 253, 0.1);
 }
