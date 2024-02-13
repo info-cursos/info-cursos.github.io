@@ -1,0 +1,25 @@
+{
+    "toast": {
+        "toast-header": {
+            "img": {
+                "src": "//info-cursos.github.io/curso/assets/favicon.ico",
+                "alt": "..."
+            },
+            "strong": "Título",
+            "small": "agora mesmo"
+        },
+        "toast-body": {
+            "message":"Sua mensagem aqui",
+            "btn-toast-next": {
+                "textContent": "Avançar",
+                "onClick": ""
+
+            },
+            "btn-toast-close": {
+                "textContent": "Fechar",
+                "onClick": ""
+
+            }
+        }
+    }
+}
