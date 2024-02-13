@@ -12,12 +12,12 @@
             "toastMensagem":"Sua mensagem aqui",
             "toastBtnAvancar": {
                 "textContent": "Avançar",
-                "onClick": "toastBtnAvancarOnClick"
+                "onClick": "toastBtnAvancarOnClick()"
 
             },
             "toastBtnFechar": {
                 "textContent": "Fechar",
-                "onClick": "toastBtnFecharOnClick"
+                "onClick": "toastBtnFecharOnClick()"
 
             }
         }
