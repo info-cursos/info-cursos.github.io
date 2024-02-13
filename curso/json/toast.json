@@ -17,7 +17,7 @@
             },
             "toastBtnFechar": {
                 "textContent": "Fechar",
-                "onClick": ""
+                "onClick": "teste()"
 
             }
         }
