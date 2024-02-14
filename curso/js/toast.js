@@ -40,7 +40,7 @@ function atualizarDados(toast) {
   document.getElementById("toastSubTitulo").textContent =
     toast.header.toastSubTitulo;
   //Atualizar Mensagem do Toast
-  document.getElementById("toastMensagem").textContent = toast.body.mensagem;
+  document.getElementById("toastMensagem").textContent = toast.body.toastMensagem;
   //Atualizar Texto do botão Avancar do Toast
   document.getElementById("toastBtnAvancar").textContent = toast.body.toastBtnAvancar.textContent;
   //Atualizar Texto do botão Next do Toast
