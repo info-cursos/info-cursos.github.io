@@ -51,8 +51,11 @@ function encontrarCurso(objeto, cursoID) {
     return null;
 }
 
+var linkAfiliado = '';
+
 // Função para atualizar os dados do curso na página
 function atualizarDadosCurso(curso) {
+    linkAfiliado = curso.info.linkAfiliado;
     //Atualizar Título da página para o nome do curso
     document.getElementById('cursoTitle').textContent = `Info Cursos | ${curso.nome}`;
 

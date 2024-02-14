@@ -21,6 +21,7 @@ function showToast() {
   
   function toastBtnAvancarOnClick() {
     console.log("O botão Avançar do toast foi clicado!");
+    window.open(linkAfiliado, '_blank');
   }
   
   function toastBtnFecharOnClick() {
