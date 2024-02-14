@@ -15,7 +15,7 @@ function showToast() {
           $(".toast").css("opacity", opacity);
         }
       }, 100);
-    }, 15000000); // Inicia a transição de opacidade no sexto segundo
+    }, 56000); // Inicia a transição de opacidade no sexto segundo
     //
   }
   
