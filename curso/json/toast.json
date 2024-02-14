@@ -9,7 +9,7 @@
             "toastSubTitulo": "agora mesmo"
         },
         "body": {
-            "toastMensagem":"Temos um super desconto de R$ 300 especialmente pra você!",
+            "toastMensagem":"Temos um super desconto de R$ 300 especialmente pra você, não perca esta oportunidade!",
             "toastBtnAvancar": {
                 "textContent": "Aproveitar desconto",
                 "onClick": "toastBtnAvancarOnClick()"
