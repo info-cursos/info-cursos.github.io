@@ -5,11 +5,11 @@
                 "src": "//info-cursos.github.io/curso/assets/favicon.ico",
                 "alt": "..."
             },
-            "toastTitulo": "Título",
+            "toastTitulo": "Mensagem urgente",
             "toastSubTitulo": "agora mesmo"
         },
         "body": {
-            "toastMensagem":"Sua mensagem aqui",
+            "toastMensagem":"Temos um super desconto de R$ 300 especialmente pra você!",
             "toastBtnAvancar": {
                 "textContent": "Avançar",
                 "onClick": "toastBtnAvancarOnClick()"
