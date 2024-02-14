@@ -31,7 +31,7 @@ function toastBtnFecharOnClick() {
 }
 
 // Função para atualizar os dados da Notificacao na página
-function atualizarDados(toast) {
+function atualizarDadosToast(toast) {
   //Atualizar Ícone do Toast
   document.getElementById("toastImagem").src = toast.header.toastImagem.src;
   //Atualizar Título do Toast
@@ -70,11 +70,11 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("https://info-cursos.github.io/curso/json/toast.json")
     .then((response) => response.json())
     .then((data) => {
-      // Chamar a função recursiva para procurar o produtoID
-      const toast = encontrarProduto(data, Notificacao);
+      // Chamar a função recursiva para procurar o toastID
+      const toast = encontrarToast(data, Notificacao);
       // Se o curso for encontrado, atualizar os dados
       if (toast) {
-        atualizarDados(toast);
+        atualizarDadosToast(toast);
       } else {
         console.error("Notificação não encontrado.");
       }
@@ -83,13 +83,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Função recursiva para encontrar a Notificacao em todos os níveis do objeto JSON
-function encontrarProduto(objeto, Notificacao) {
+function encontrarToast(objeto, Notificacao) {
   // Verificar se o objeto atual é um array
   if (Array.isArray(objeto)) {
     // Se for um array, iterar sobre cada elemento do array
     for (let i = 0; i < objeto.length; i++) {
       // Chamar a função recursiva para cada elemento do array
-      const resultado = encontrarProduto(objeto[i], Notificacao);
+      const resultado = encontrarToast(objeto[i], Notificacao);
       // Se a Notificacao for encontrada, retornar o resultado
       if (resultado) {
         return resultado;
@@ -103,7 +103,7 @@ function encontrarProduto(objeto, Notificacao) {
         return objeto[chave];
       }
       // Chamar a função recursiva para cada valor do objeto
-      const resultado = encontrarProduto(objeto[chave], Notificacao);
+      const resultado = encontrarToast(objeto[chave], Notificacao);
       // Se a Notificacao for encontrada, retornar o resultado
       if (resultado) {
         return resultado;
