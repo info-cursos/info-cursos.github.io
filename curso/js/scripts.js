@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Obter o nome do curso da URL
     const urlParams = new URLSearchParams(window.location.search);
-    const cursoID = 'sobrancelhas-perfeitas'; //urlParams.get('id');
+    const cursoID = urlParams.get('id');
 
     // Carregar o arquivo config.json
     fetch('https://info-cursos.github.io/curso/cursos.json')
