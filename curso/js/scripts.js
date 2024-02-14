@@ -1,33 +1,33 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Obter o nome do produto da URL
     const urlParams = new URLSearchParams(window.location.search);
-    const produtoID = urlParams.get('id');
+    const cursoID = urlParams.get('id');
 
     // Carregar o arquivo config.json
     fetch('https://info-cursos.github.io/curso/cursos.json')
         .then(response => response.json())
         .then(data => {
-            // Chamar a função recursiva para procurar o produtoID
-            const curso = encontrarProduto(data, produtoID);
+            // Chamar a função recursiva para procurar o cursoID
+            const curso = encontrarCurso(data, cursoID);
             // Se o curso for encontrado, atualizar os dados
             if (curso) {
-                atualizarDados(curso);
+                atualizarDadosCurso(curso);
             } else {
-                console.error('Produto não encontrado.');
+                console.error('Curso não encontrado.');
             }
         })
         .catch(error => console.error('Erro ao carregar cursos.json:', error));  
 });
 
-// Função recursiva para encontrar o produtoID em todos os níveis do objeto JSON
-function encontrarProduto(objeto, produtoID) {
+// Função recursiva para encontrar o cursoID em todos os níveis do objeto JSON
+function encontrarCurso(objeto, cursoID) {
     // Verificar se o objeto atual é um array
     if (Array.isArray(objeto)) {
         // Se for um array, iterar sobre cada elemento do array
         for (let i = 0; i < objeto.length; i++) {
             // Chamar a função recursiva para cada elemento do array
-            const resultado = encontrarProduto(objeto[i], produtoID);
-            // Se o produtoID for encontrado, retornar o resultado
+            const resultado = encontrarCurso(objeto[i], cursoID);
+            // Se o cursoID for encontrado, retornar o resultado
             if (resultado) {
                 return resultado;
             }
@@ -35,26 +35,26 @@ function encontrarProduto(objeto, produtoID) {
     } else if (typeof objeto === 'object') {
         // Se o objeto atual for um objeto, iterar sobre cada propriedade do objeto
         for (let chave in objeto) {
-            // Se a propriedade atual for o produtoID, retornar o objeto correspondente
-            if (chave === produtoID) {
+            // Se a propriedade atual for o cursoID, retornar o objeto correspondente
+            if (chave === cursoID) {
                 return objeto[chave];
             }
             // Chamar a função recursiva para cada valor do objeto
-            const resultado = encontrarProduto(objeto[chave], produtoID);
-            // Se o produtoID for encontrado, retornar o resultado
+            const resultado = encontrarCurso(objeto[chave], cursoID);
+            // Se o cursoID for encontrado, retornar o resultado
             if (resultado) {
                 return resultado;
             }
         }
     }
-    // Se o produtoID não for encontrado em nenhum nível, retornar null
+    // Se o cursoID não for encontrado em nenhum nível, retornar null
     return null;
 }
 
-// Função para atualizar os dados do produto na página
-function atualizarDados(curso) {
-    //Atualizar Título da página para o nome do produto
-    document.getElementById('produtoTitle').textContent = `Info Cursos | ${curso.nome}`;
+// Função para atualizar os dados do curso na página
+function atualizarDadosCurso(curso) {
+    //Atualizar Título da página para o nome do curso
+    document.getElementById('cursoTitle').textContent = `Info Cursos | ${curso.nome}`;
 
     // Atualizar os valores dos elementos de textos e imagem
     document.getElementById('nome').textContent = curso.nome;
