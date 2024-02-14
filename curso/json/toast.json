@@ -11,7 +11,7 @@
         "body": {
             "toastMensagem":"Temos um super desconto de R$ 300 especialmente pra você!",
             "toastBtnAvancar": {
-                "textContent": "Avançar",
+                "textContent": "Aproveitar desconto",
                 "onClick": "toastBtnAvancarOnClick()"
 
             },
