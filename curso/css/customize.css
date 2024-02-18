@@ -48,3 +48,20 @@
     box-shadow: 5px 5px 1px rgba(13, 110, 253, 0.1);
 }
 
+#Toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#toastIcon {
+    display: none;
+    margin-bottom: -2px;
+    padding-right: 10px;
+    color: #0d6efd;
+}
+
+#toastImagem {
+    display: block;
+    width: 25px;
+}

@@ -2,7 +2,7 @@
     "toast": {
         "header": {
             "toastImagem": {
-                "src": "//info-cursos.github.io/curso/assets/favicon.ico",
+                "src": "//info-cursos.github.io/curso/assets/bell-icon-transparent-notification-free-png.webp",
                 "alt": "..."
             },
             "toastTitulo": "Mensagem urgente",
