@@ -54,6 +54,10 @@
     right: 20px;
 }
 
+.toast-body {
+    text-align: -webkit-center;
+}
+
 #toastIcon {
     display: none;
     margin-bottom: -2px;
